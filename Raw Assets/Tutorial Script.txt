@@ -1,0 +1,113 @@
+Angular Momentum:
+This heads-up display will help to explain how angular momentum works. It displays two bits of information more visually: your ANGULAR VELOCITY and your MOMENT OF INERTIA.
+ANGULAR VELOCITY, shown by the bright green arrows, indicates how fast you are spinning.
+MOMENT OF INERTIA, shown by the purple circle, is a measure of how spread out your MASS is. You can increase MOMENT OF INERTIA by stretching out (mouse up) and decrease it by curling up (mouse down).
+When you are floating in space without any forces acting on you (when nothing is pushing you), you have constant ANGULAR MOMENTUM; ANGULAR MOMENTUM will stay the same until you bump into something.
+However, (ANGULAR MOMENTUM) = (ANGULAR VELOCITY) x (MOMENT OF INERTIA). This means that when you decrease your MOMENT OF INERTIA by curling up (making your MASS less spread out), you will spin faster.
+This is so that (ANGULAR VELOCITY) x (MOMENT OF INERTIA) stays the same (if MOMENT OF INERTIA gets smaller, ANGULAR VELOCITY must get bigger).
+Similarly, when you increase your MOMENT OF INERTIA, your ANGULAR VELOCITY must get smaller in order for ANGULAR MOMENTUM to stay the same.
+You can use this to your advantage to control how fast you spin to avoid landing on your head during the missions!
+
+Gameplay:
+When playing the missions, you'll need to use your feet for jumping and your hands for interacting.
+Your feet (and only your feet) can hook into the green foot hooks shown here on the bottom wall.
+Your hands (not your arms, body or legs) can press the red buttons, which will turn green when pressed.
+You will generally enter a level through the entry hatch, shown on the left, with a duller light around it.
+The exit hatch, shown on the right, will have a bright green light around it when it is unlocked and a bright red light when it is locked. The exit hatch can be unlocked by completing set tasks and/ or pressing buttons.
+
+Level 1:
+Welcome to the Space Station!
+You might have noticed that there's no gravity here, so you won't fall to the ground.
+Before you get out of your space pod, let's get you used to moving around in space.
+You can reach out by moving your mouse upwards to the top of the screen. Try this now.#@[Move the mouse up to the top of the screen.]
+Nicely done. You can also crouch down to curl up into a ball by moving your mouse down to the bottom of the screen. Try this now.#@[Move the mouse down to the bottom of the screen.]
+Good stuff. Another thing you'll notice when you're here in space is that you can spin around because you aren't stuck on the ground.
+When you're floating around, you can spin faster by crouching down or spin more slowly by extending out tall.
+Try to spin fast now by crouching right down small.#@[Move the mouse down to the bottom of the screen.]
+Good work, now try to spin slowly by extending your arms and legs out again.#@[Move the mouse up to the top of the screen.]
+Great! I've just configured the exit hatch on the space pod that you're in, but you'll need to press those two red buttons inside using your hands to unlock the hatch.#@[Press a button with your hands.]
+That's one button pressed; try to get the other one now.#@[Press the button with your hands.]
+Congrats! Grab the hatch and come on in!
+
+Level 2:
+Right, you've just come in through the entry hatch of this corridor. There's a bit more space in this module of the Space Station, so you'll need to learn how to jump.
+You're aiming to get to the exit hatch with the green light around it over there.
+It's possible to bounce around off of the walls, but generally you'll need to control your jumps by first hooking your feet into green foot hook wires like you can see on the left wall there. Try this now.#@[Hook your feet into the foot hooks on the wall.]
+From here, you can choose how fast you want to jump by moving the mouse: moving it closer to you will make the arrow smaller and the jump slower; moving it further away will make the arrow bigger and the jump faster.
+You can select the speed of the jump by clicking the mouse. Try to jump over to the exit hatch over there now.#@[Click to jump to the exit hatch.]
+Get your hands close to the exit hatch to grab it, then come into the next module.
+
+Level 3:
+Now then, there's another red button in here; I'll need you to press it to unlock the next exit hatch.
+It's a little bit off to the side, so you're going to need to spin during your jump in order to reach it. Hook your feet into the foot hooks to get started.#@[Move the mouse up to the top of the screen.]
+Right, now choose the power of your jump like you did in the last module.#@[Click to choose jump power.]
+Now, just before you leave the wall, you can choose the Angular Momentum that you want to have during your jump. Angular Momentum is similar to how fast you spin; generally more Angular Momentum means faster spinning.
+You can choose your Angular Momentum by moving the mouse around you and clicking to select. You'll need to have at least a little bit if you want to reach that button.#@[Click to select your Angular Momentum.]
+Now, try to control your spin like you did earlier in your space pod to reach that button! If you miss it, just press "R" to have another go.
+Great job! Now be sure to grab the exit hatch with your hands.
+
+Level 4:
+Here, you'll need to spin around to land feet first on those foot hooks over there. Be sure to give yourself some Angular Momentum when you jump!
+Great! Now time to learn some new tricks: you'll find that if you aim with your mouse, it's actually possible to jump off of the walls at an angle.
+You can use this to aim your jump towards the exit hatch down there, which I've just unlocked for you. See if you can jump towards it.
+Great job! Now be sure to grab the exit hatch with your hands. Remember, you can press 'R' to restart.
+
+Level 5:
+I'll leave you to it this time, make your way to the Mission Control module. Make sure you land feet-first on the foot hooks!
+
+Level 6:
+Ah, this is another one you'll have to unlock from the inside.
+
+Level 7:
+There should be a button to unlock that hatch just around the corner.
+
+Level 8:
+Right, you're getting towards the more inhabited areas of the Station now. Unfortunately for you, we keep our cargo strapped to the walls in these areas, so you'll have to try to avoid bumping into it too much.
+If I remember correctly, there should be some cargo in the module you're in at the moment. Not to worry though, you should be able to dive right through the middle of it.
+Don't worry if it takes a few tries to get through; as I say, it can be tricky to get around without gravity to guide you. Remember, you can restart by pressing "R".
+Give yourself some angular momentum when you jump, then you should be able to get through and flip over onto your feet once you're through the gap.
+Try to do half of a flip before the gap, then outstretch to pass through the gap feet first, then you should be able to curl up once you come out the other side and land on your feet on the far wall. Give it a go now.
+Great stuff! Right then, the exit hatch should be just up that tunnel near where you've landed.
+You should try to flip onto the foot hooks below the tunnel. Give yourself lots of Angular Momentum, then curl up to increase your Angular Velocity so that you spin around to land on your feet.
+Nice! Now just jump straight up to grab the exit hatch.
+
+Completion Screen:
+Ah, sorry about that, it seems I forgot to connect another module to that exit hatch before you went through it...
+In that case, I guess you can have the rest of the day off.
+Enjoy space!
+
+Level X:
+Welcome to the Space Station!
+You'll need to make your way to the Mission Control module; start by leaving through that hatch.
+When you're floating around, you can reach out or curl up by moving the mouse to the top or bottom of the screen.
+You can get around the ship by pushing off of the walls, but you'll need to hook your feet into those wires on the walls in order to control your jumps.
+Hook your feet onto the wall now to try jumping.
+From here, you can move the mouse to choose the power and direction of your jump, clicking to confirm.#@[Choose power and direction to continue]
+Next, move the mouse and click to choose the angular momentum of your jump.#@[Choose angular momentum to continue]
+You'll have to be careful how you jump; moving around in zero-gravity can be tricky.
+If you get stuck floating around, press 'R' to restart.
+You'll need to get your hands near the handles on the hatch in order to open it.
+
+Level Y:
+Good work making it out of your entry module! You've just picked up a heads-up display, this will help you to navigate around the Station.
+You're still needed in Mission Control, so head down to the exit hatch around the corner there.
+You'll need to hook your feet into the wires on the far side of this passageway, so you should try to spin around during your jump to land feet first.
+Try to jump and land on your feet on the far wall. Remember, you can spin faster if you curl up whilst you're floating.
+Let me explain that heads-up display for you. Right now it shows you 3 bits of information: your Angular Velocity (bright green arrows), your Moment of Inertia (purple circle) and your Angular Momentum (orange cross).
+Your Angular Velocity indicates how fast you are spinning. Your Moment of Inertia measures how spread out your Mass is, which is shown by how spaced out the purple circle is.
+Your Angular Momentum is shown by how much the orange cross is spinning. If no forces are being applied to you (nothing is pushing you), Angular Momentum is conserved.
+This means that when you float through space here, angular momentum is constant, so the orange cross will spin at a constant speed.
+However, (Angular Momentum) = (Angular Velocity) x (Moment of Inertia). This means that when you decrease your Moment of Inertia by curling up (making your Mass less spread out), you will spin faster.
+This is so that (Angular Velocity) x (Moment of Inertia) stays the same (if Moment of Inertia gets smaller, Angular Velocity must get bigger).
+You can use this to your advantage to control how fast you spin to avoid landing on your head! Try moving your mouse around now.
+Anyway, I'm getting sidetracked. You've almost made it to the exit hatch; come and find me in the Mission Control module!
+
+Level Z:
+Right, you're getting towards the more inhabited areas of the Station now. Unfortunately for you, we keep our cargo strapped to the walls in these areas, so you'll have to try to avoid bumping into it too much.
+If I remember correctly, there should be some cargo in the module you're in at the moment. Not to worry though, you should be able to dive right through the middle of it.
+Don't worry if it takes a few tries to get through; as I say, it can be tricky to get around without gravity to guide you. Remember, you can restart by pressing "R".
+If you give yourself some Angular Momentum when you jump, you should be able to get through and flip over onto your feet once you're through the gap.
+Try to do half of a flip before the gap, then outstretch as you pass through it so that you don't spin as fast, then you should be able to curl up once you come out the other side and land on your feet on the far wall. Give it a go now.
+Great stuff! Right then, the exit hatch should be just up that tunnel near where you've landed.
+You should try to flip onto the foot hooks below the tunnel. Give yourself lots of Angular Momentum, then curl up to increase your Angular Velocity so that you spin around to land on your feet.
+Nice flip! Now just jump straight up to grab the exit hatch by the handles.

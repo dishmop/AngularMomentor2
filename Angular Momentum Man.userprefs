@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Gameplay Controllers\InstructionController.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Gameplay Controllers\PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Gameplay Controllers\GameController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Gameplay Controllers\MenuController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Gameplay Controllers\InstructionController.cs" Line="68" Column="51" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,132 @@
+fileFormatVersion: 2
+guid: 0365e5534c8522c44af6b4d3115bf7de
+timeCreated: 1436524608
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Astronaut Body Components_0
+    21300002: Astronaut Body Components_1
+    21300004: Astronaut Body Components_2
+    21300006: Astronaut Body Components_3
+    21300008: Astronaut Body Components_4
+    21300010: Astronaut Body Components_5
+    21300012: Astronaut Body Components_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 500
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Astronaut Body Components_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 539
+        width: 102
+        height: 296
+      alignment: 9
+      pivot: {x: .48855719, y: .863824785}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Astronaut Body Components_1
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 674
+        width: 126
+        height: 162
+      alignment: 9
+      pivot: {x: .412011176, y: .0556041561}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Astronaut Body Components_2
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 223
+        width: 85
+        height: 292
+      alignment: 9
+      pivot: {x: .611503959, y: .902379513}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Astronaut Body Components_3
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 250
+        width: 162
+        height: 353
+      alignment: 9
+      pivot: {x: .735132396, y: .545098007}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Astronaut Body Components_4
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 153
+        width: 86
+        height: 66
+      alignment: 9
+      pivot: {x: .373457521, y: .732138872}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Astronaut Body Components_5
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 23
+        width: 72
+        height: 224
+      alignment: 9
+      pivot: {x: .526551187, y: .863658726}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Astronaut Body Components_6
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 14
+        width: 79
+        height: 219
+      alignment: 9
+      pivot: {x: .538475692, y: .836434364}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
