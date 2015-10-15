@@ -1,28 +1,100 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Linq;
 
 public class SetupResolution : MonoBehaviour {
-
-	int count = 0;
-	static bool firstTime = true;
+	float targetFPS = 60;
+	float outlierDuration = 0.2f;	// 5 FPS is clearly erroneous and we should just ignore it
+	float sustainedBadFPSDuration = 5;
+	float smoothedFrameDuration = 1/30f;
+	float triggerStartTime = -100;
+	float triggerDuration = 2;
+	static Resolution[] resolutions;
+	static int resIndex = -1;
+	static int lastRestIndex = -1;
+	static float aspect = 0;
 	
+	float lastTime = 0;
+	float timerStart = 0;
 	
 	void Awake () {
-		if (firstTime){
-			Screen.SetResolution (1024, 768, false);
+		if (resolutions == null){
+			resolutions = Screen.resolutions;
+			resIndex = resolutions.Count() - 1;
+			aspect = (float)resolutions[resIndex].width / (float)resolutions[resIndex].height;
 		}
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (count++ == 60){
-			if (firstTime){
-				Screen.SetResolution (Screen.currentResolution.width, Screen.currentResolution.height, true);
-				firstTime = false;
-			}
+		#if !UNITY_WEBPLAYER
+		if (lastRestIndex != resIndex){
+			Screen.SetResolution (resolutions[resIndex].width, resolutions[resIndex].height, true);
+			lastRestIndex = resIndex;
+		}
+		
+		float thisTime = Time.realtimeSinceStartup;
+		float frameDuration = thisTime - lastTime;
+		
+		if (frameDuration <= outlierDuration){
+			smoothedFrameDuration = Mathf.Lerp (smoothedFrameDuration, frameDuration, 0.05f);
+		}
+		else{
+			// If we get an outlier restart the timer
+			ResetTimer();
+		}
+		
+		// The framerate has to be below 90% of the target for a sustained period before we switch resolutions
+		float smoothedFPS = 1f/smoothedFrameDuration;
+		if (smoothedFPS > targetFPS * 0.9f){
+			ResetTimer();
+		}
+		
+		if (Time.time > timerStart + sustainedBadFPSDuration){
+			ReduceResolution();
 			
 		}
 		
+		
+		
+		lastTime = thisTime;
+		#endif
 	}
+	
+	void ResetTimer(){
+		timerStart = Time.time;
+	}
+	
+	void ReduceResolution(){
+		ResetTimer();
+		int newResIndex = GetNextResDown();
+		if (newResIndex != resIndex){
+			Debug.Log ("Reducing resolution to " + resolutions[newResIndex].width + "x" + resolutions[newResIndex].height + " due to low framerate");
+			triggerStartTime = Time.time;
+		}
+		resIndex = newResIndex;
+		
+	}
+	
+	int GetNextResDown(){
+		for (int testIndex = resIndex-1; testIndex >= 0; --testIndex){
+			float testAspect = (float)resolutions[testIndex].width / (float)resolutions[testIndex].height;
+			if (Mathf.Abs(testAspect - aspect) < 0.01f){
+				return testIndex;
+			}
+		}
+		return resIndex;
+	}
+	
+	void OnGUI(){
+		if (Time.time < triggerStartTime + triggerDuration){
+			GUI.skin.label.fontSize = 20;
+			string message = "Reducing resolution to " + resolutions[resIndex].width + "x" + resolutions[resIndex].height + " to try and improve framerate";
+			Vector2 textSize = GUI.skin.label.CalcSize(new GUIContent(message));
+			float widthRemaining = Screen.width - textSize.x;
+			GUI.Label(new Rect(widthRemaining * 0.5f, 20, textSize.x, 50), message);
+		}
+	}
+	
 }
