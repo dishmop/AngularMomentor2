@@ -16,6 +16,7 @@ public class ExitController : MonoBehaviour {
 		} else {
 			GetComponent<SpriteRenderer> ().sprite = spriteLocked;
 		}
+
 	}
 
 	public void StartAnimation () {

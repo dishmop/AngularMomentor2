@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
+using UnityEngine.Analytics;
 
 public class PlayerController : MonoBehaviour {
 	
@@ -62,6 +64,8 @@ public class PlayerController : MonoBehaviour {
 
 	public string nextScene;
 
+	public float startTime;
+	
 	// Use this for initialization
 	void Start () {
 		cam = Camera.main;
@@ -102,6 +106,13 @@ public class PlayerController : MonoBehaviour {
 		//nextState = State.Free;
 		lastVelocity = Vector2.zero;
 		lastAngularVelocity = 0.0f;
+		startTime = Time.time;
+//		Debug.Log ("levelStart - levelName: " + Application.loadedLevelName);
+		Analytics.CustomEvent("levelStart", new Dictionary<string, object>
+		{
+			{ "levelName", Application.loadedLevelName },
+		});		
+		
 	}
 	
 	// Update is called once per frame
@@ -170,6 +181,13 @@ public class PlayerController : MonoBehaviour {
 			if (extension < 0.01f && (rb.position - desiredPosition).sqrMagnitude < 0.01f
 			    && rb.velocity.sqrMagnitude < 0.01f && Mathf.Abs (rb.angularVelocity) < 0.2f) {
 				Application.LoadLevel(nextScene);
+//				Debug.Log ("levelComplete - levelName: " + Application.loadedLevelName + ", levelTime = " + (Time.time - startTime));
+				Analytics.CustomEvent("levelStart", new Dictionary<string, object>
+				                      {
+					{ "levelName", Application.loadedLevelName },
+					{ "levelTime",  (Time.time - startTime)},
+				});
+				
 			}
 			break;
 		}

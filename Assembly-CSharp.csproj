@@ -65,9 +65,6 @@
      <Compile Include="Assets\Scripts\Object Controllers\DummyAngularHUDController.cs" />
      <Compile Include="Assets\Scripts\Object Controllers\ExitController.cs" />
      <Compile Include="Assets\Scripts\SetupResolution.cs" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
