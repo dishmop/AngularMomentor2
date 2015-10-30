@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Linq;
-using System.Collections.Generic;
-using UnityEngine.Analytics;
+//using System.Collections.Generic;
+//using UnityEngine.Analytics;
 
 public class SetupResolution : MonoBehaviour {
 	
@@ -76,14 +76,18 @@ public class SetupResolution : MonoBehaviour {
 		int newResIndex = GetNextResDown();
 		if (newResIndex != resIndex){
 			Debug.Log ("Reducing resolution to " + resolutions[newResIndex].width + "x" + resolutions[newResIndex].height + " due to low framerate");
-			Analytics.CustomEvent("ReduceResolution", new Dictionary<string, object>
-			{
-				{ "numReductions", numReductions},
-				{ "gameTime", Time.fixedTime},
-				{ "level", Application.loadedLevelName},
-				{ "oldes", resolutions[resIndex].width + "x" + resolutions[resIndex].height},
-				{ "newRes", resolutions[newResIndex].width + "x" + resolutions[newResIndex].height},
-			});	
+			
+			GoogleAnalytics.Client.SendTimedEventHit("reduceResolution",  Application.loadedLevelName, (resolutions[newResIndex].width + "x" + resolutions[newResIndex].height), Time.fixedTime);
+//			
+//									
+//			Analytics.CustomEvent("ReduceResolution", new Dictionary<string, object>
+//			{
+//				{ "numReductions", numReductions},
+//				{ "gameTime", Time.fixedTime},
+//				{ "level", Application.loadedLevelName},
+//				{ "oldes", resolutions[resIndex].width + "x" + resolutions[resIndex].height},
+//				{ "newRes", resolutions[newResIndex].width + "x" + resolutions[newResIndex].height},
+//			});	
 			triggerStartTime = Time.time;
 			++numReductions;
 		}

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.Analytics;
+//using System.Collections.Generic;
+//using UnityEngine.Analytics;
 
 public class GameController : MonoBehaviour {
 
@@ -51,21 +51,23 @@ public class GameController : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Escape)) {
 //			Debug.Log ("levelQuit- levelName: " + Application.loadedLevelName + ", levelTime = " + (Time.time - player.GetComponent<PlayerController>().startTime));
-			Analytics.CustomEvent("levelQuit", new Dictionary<string, object>
-			{
-				{ "levelName", Application.loadedLevelName },
-				{ "levelTime", (Time.time - player.GetComponent<PlayerController>().startTime)},
-			});			
+			GoogleAnalytics.Client.SendTimedEventHit("gameFlow", "levelQuit", Application.loadedLevelName, Time.timeSinceLevelLoad);
+//			Analytics.CustomEvent("levelQuit", new Dictionary<string, object>
+//			{
+//				{ "levelName", Application.loadedLevelName },
+//				{ "levelTime", (Time.time - player.GetComponent<PlayerController>().startTime)},
+//			});			
 			
 			Application.LoadLevel ("Start Screen");
 		}
 		if (Input.GetKeyDown (KeyCode.R)) {
+			GoogleAnalytics.Client.SendTimedEventHit("gameFlow", "levelRestart", Application.loadedLevelName, Time.timeSinceLevelLoad);
 //			Debug.Log ("levelRestart - levelName: " + Application.loadedLevelName + ", levelTime = " + (Time.time - player.GetComponent<PlayerController>().startTime));
-			Analytics.CustomEvent("levelRestart", new Dictionary<string, object>
-			{
-				{ "levelName", Application.loadedLevelName },
-				{ "levelTime", (Time.time - player.GetComponent<PlayerController>().startTime)},
-			});				
+//			Analytics.CustomEvent("levelRestart", new Dictionary<string, object>
+//			{
+//				{ "levelName", Application.loadedLevelName },
+//				{ "levelTime", (Time.time - player.GetComponent<PlayerController>().startTime)},
+//			});				
 			Application.LoadLevel (Application.loadedLevelName);
 		}
 		if (!playerDead && ic != null) {

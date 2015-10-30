@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-using System.Collections.Generic;
-using UnityEngine.Analytics;
+//using System.Collections.Generic;
+//using UnityEngine.Analytics;
 
 public class PlayerController : MonoBehaviour {
 	
@@ -108,10 +108,12 @@ public class PlayerController : MonoBehaviour {
 		lastAngularVelocity = 0.0f;
 		startTime = Time.time;
 //		Debug.Log ("levelStart - levelName: " + Application.loadedLevelName);
-		Analytics.CustomEvent("levelStart", new Dictionary<string, object>
-		{
-			{ "levelName", Application.loadedLevelName },
-		});		
+		GoogleAnalytics.Client.SendEventHit("gameFlow", "levelStart", Application.loadedLevelName);
+		
+//		Analytics.CustomEvent("levelStart", new Dictionary<string, object>
+//		{
+//			{ "levelName", Application.loadedLevelName },
+//		});		
 		
 	}
 	
@@ -180,13 +182,17 @@ public class PlayerController : MonoBehaviour {
 		case (State.Exiting) : {
 			if (extension < 0.01f && (rb.position - desiredPosition).sqrMagnitude < 0.01f
 			    && rb.velocity.sqrMagnitude < 0.01f && Mathf.Abs (rb.angularVelocity) < 0.2f) {
+				GoogleAnalytics.Client.SendScreenHit("levelComplete_" + Application.loadedLevelName);
+				
 				Application.LoadLevel(nextScene);
-//				Debug.Log ("levelComplete - levelName: " + Application.loadedLevelName + ", levelTime = " + (Time.time - startTime));
-				Analytics.CustomEvent("levelStart", new Dictionary<string, object>
-				                      {
-					{ "levelName", Application.loadedLevelName },
-					{ "levelTime",  (Time.time - startTime)},
-				});
+				//				Debug.Log ("levelComplete - levelName: " + Application.loadedLevelName + ", levelTime = " + (Time.time - startTime));
+				GoogleAnalytics.Client.SendEventHit("gameFlow", "levelStart", Application.loadedLevelName);
+				
+//				Analytics.CustomEvent("levelStart", new Dictionary<string, object>
+//				                      {
+//					{ "levelName", Application.loadedLevelName },
+//					{ "levelTime",  (Time.time - startTime)},
+//				});
 				
 			}
 			break;
