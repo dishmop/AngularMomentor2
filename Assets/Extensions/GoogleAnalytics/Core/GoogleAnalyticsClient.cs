@@ -3,6 +3,7 @@ using System.Text;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 
 
@@ -675,6 +676,10 @@ public class GoogleAnalyticsClient  {
 
 
 	public void SendEventHit(string category, string action, string label = "", int val = -1, bool trackLevelName = false) {
+		category = Regex.Replace(category,"[^A-Za-z0-9_]","");
+		action = Regex.Replace(action,"[^A-Za-z0-9_]","");
+		label = Regex.Replace(label,"[^A-Za-z0-9_]","");
+		
 		CreateHit(GoogleAnalyticsHitType.EVENT);
 		SetEventCategory(category);
 		SetEventAction(action);
@@ -785,6 +790,8 @@ public class GoogleAnalyticsClient  {
 	}
 
 	public void SendScreenHit(string screenName) {
+		screenName = Regex.Replace(screenName,"[^A-Za-z0-9_]","");
+		
 		CreateHit(GoogleAnalyticsHitType.APPVIEW);
 		SetScreenName(screenName);
 		Send();
